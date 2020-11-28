@@ -1,0 +1,41 @@
+{
+  "name": "geotiff-from",
+  "version": "0.0.0",
+  "description": "With One Function, Load a GeoTIFF from an ArrayBuffer, Blob, Buffer, DataView, File or URL",
+  "main": "geotiff-from",
+  "files": [
+    "geotiff-from.js"
+  ],
+  "scripts": {
+    "format": "npx prettier --arrow-parens=avoid --trailing-comma=none --write *.js",
+    "test": "ava --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeoTIFF/geotiff-from.git"
+  },
+  "keywords": [
+    "blob",
+    "cloud-optimized",
+    "cog",
+    "data",
+    "from",
+    "input",
+    "geotiff",
+    "universal"
+  ],
+  "author": "Daniel J. Dufour",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/GeoTIFF/geotiff-from/issues"
+  },
+  "homepage": "https://github.com/GeoTIFF/geotiff-from#readme",
+  "dependencies": {
+    "does-url-exist": "0.0.1",
+    "geotiff": "^1.0.0-beta.14",
+    "toab": "^1.0.2"
+  },
+  "devDependencies": {
+    "ava": "^3.13.0"
+  }
+}
