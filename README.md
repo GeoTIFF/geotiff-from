@@ -27,6 +27,6 @@ const geotiff = await from(uint8Array);
 ## automatically detect overview files
 If you pass a URL to geotiff-from, it can automatically check if an overview file
 exists by issuing HEAD requests.  If you'd like to turn on this functionality, do
-```
+```js
 const geotiff = await from(url, { ovr: true });
 ```
