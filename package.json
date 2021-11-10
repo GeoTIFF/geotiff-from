@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "format": "npx prettier --arrow-parens=avoid --trailing-comma=none --write *.js",
-    "test": "ava --verbose"
+    "setup": "cd data && sh setup.sh",
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -32,10 +33,13 @@
   "homepage": "https://github.com/GeoTIFF/geotiff-from#readme",
   "dependencies": {
     "does-url-exist": "0.0.1",
-    "geotiff": "^1.0.0-beta.14",
-    "toab": "^1.0.2"
+    "geotiff": "*",
+    "lru-cache": "^6.0.0",
+    "toab": "^2.2.0"
   },
   "devDependencies": {
-    "ava": "^3.13.0"
+    "find-and-read": "^1.0.2",
+    "flug": "^2.1.0",
+    "srvd": "^0.3.1"
   }
 }

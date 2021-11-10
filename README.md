@@ -1,6 +1,10 @@
 # geotiff-from
 With One Function, Load a GeoTIFF from an ArrayBuffer, Blob, Buffer, DataView, File, TypedArray, or URL
 
+# features
+- overview detection
+- url caching
+
 # install
 ```bash
 npm install geotiff-from
@@ -10,13 +14,13 @@ npm install geotiff-from
 ```js
 const from = require("geotiff-from");
 
-const geotiff = await from({ data: url });
-const geotiff = await from({ data: urls });
-const geotiff = await from({ data: blob });
-const geotiff = await from({ data: arrayBuffer });
-const geotiff = await from({ data: buffer });
-const geotiff = await from({ data: dataView });
-const geotiff = await from({ data: uint8Array });
+const geotiff = await from(url);
+const geotiff = await from([url, overview]);
+const geotiff = await from(blob);
+const geotiff = await from(arrayBuffer);
+const geotiff = await from(buffer);
+const geotiff = await from(dataView);
+const geotiff = await from(uint8Array);
 ```
 
 # advanced usage
@@ -24,5 +28,5 @@ const geotiff = await from({ data: uint8Array });
 If you pass a URL to geotiff-from, it can automatically check if an overview file
 exists by issuing HEAD requests.  If you'd like to turn on this functionality, do
 ```
-const geotiff = await from({ data: url, ovr: true });
+const geotiff = await from(url, { ovr: true });
 ```
