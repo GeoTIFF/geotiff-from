@@ -108,3 +108,6 @@ dist
 
 # pnpm lock file
 pnpm-lock.yaml
+
+data/*.tif
+data/*.tiff
