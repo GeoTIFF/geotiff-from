@@ -1,6 +1,6 @@
 {
   "name": "geotiff-from",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "With One Function, Load a GeoTIFF from an ArrayBuffer, Blob, Buffer, DataView, File or URL",
   "main": "geotiff-from.js",
   "files": [
