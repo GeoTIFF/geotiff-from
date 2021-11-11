@@ -35,11 +35,11 @@
     "does-url-exist": "0.0.1",
     "geotiff": "*",
     "lru-cache": "^6.0.0",
-    "toab": "^2.2.0"
+    "toab": "^2.2.1"
   },
   "devDependencies": {
     "find-and-read": "^1.0.2",
-    "flug": "^2.1.0",
+    "flug": "^2.1.1",
     "srvd": "^0.3.1"
   }
 }
